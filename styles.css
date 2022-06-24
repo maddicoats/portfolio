@@ -1,0 +1,45 @@
+* {
+    font-family: monospace;
+}
+nav {
+    margin-bottom: 30px;
+    background-color: cadetblue;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+nav>ul {
+    list-style-type: none;
+    border: 2px solid black;
+    height: 45px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>ul>li>a {
+    color: #222;
+    text-decoration: none;
+
+}
+
+nav>ul>li>a:hover {
+    color: antiquewhite;
+    text-decoration: underline;
+
+}
+
+h1 {
+    color: coral;
+    text-align: center;
+    font-family: 'Fascinate', cursive;
+    font-size: 450%;
+}
+
+p {
+    text-align: center;
+}
+
