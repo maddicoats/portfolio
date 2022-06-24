@@ -1,6 +1,11 @@
 * {
     font-family: monospace;
 }
+
+body {
+    background-color: antiquewhite;
+}
+
 nav {
     margin-bottom: 30px;
     background-color: cadetblue;
@@ -33,13 +38,14 @@ nav>ul>li>a:hover {
 }
 
 h1 {
-    color: coral;
+    color: black;
     text-align: center;
-    font-family: 'Fascinate', cursive;
+    font-family: 'chakra petch', sans-serif;
     font-size: 450%;
 }
 
-p {
+h2 {
     text-align: center;
+    font-family: 'chakra petch', sans-serif;
 }
 
