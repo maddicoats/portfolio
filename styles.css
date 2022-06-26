@@ -56,11 +56,27 @@ h2 {
     margin-top: 0px;
 }
 
-
 main {
     margin: 10px;
 }
 
-.github {
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
+}
+
+.icons > a:hover {
+    cursor: alias;
+    padding: 10px;
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 40%;
+    background-color: white;
+}
+
+.icons>a {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
 }
