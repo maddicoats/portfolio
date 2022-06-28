@@ -10,7 +10,7 @@ main {
     margin: 10px;
 }
 
-/* NAVIGATION BAR */
+/* --------NAVIGATION BAR-------- */
 nav {
     margin-bottom: 30px;
     background-color: rgba(95, 158, 160, 0.503);
@@ -69,11 +69,22 @@ h2 {
     height: 100vw;
 }
 
+/* TECH SKILLS */
+.tech-skills {
+    height: 100vw;
+}
+
+/* PROJECTS */
+.projects {
+    height: 100vw;
+}
+
 /* CONTACT */
 .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 50vw;
 }
 
 .icons > a:hover {
