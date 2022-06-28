@@ -13,8 +13,11 @@ main {
 /* --------NAVIGATION BAR-------- */
 nav {
     margin-bottom: 30px;
-    background-color: rgba(95, 158, 160, 0.503);
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(176, 196, 188);
     border: 3.5px double black;
+    border-radius: 3px;
     height: 45px;
 }
 
@@ -39,7 +42,13 @@ nav > ul > li > a:hover {
     font-style: italic;
 }
 
-/* HOME */
+.navbar {
+    position: sticky;
+    top: 8px;
+    z-index: 100;
+}
+
+/* ----------HOME---------- */
 
 .home {
     height: 100vw;
@@ -57,7 +66,7 @@ h2 {
     font-family: "chakra petch", sans-serif;
 }
 
-/* ABOUT */
+/* ----------ABOUT---------- */
 
 .about--para {
     text-align: center;
@@ -69,22 +78,22 @@ h2 {
     height: 100vw;
 }
 
-/* TECH SKILLS */
+/* ----------TECH SKILLS---------- */
 .tech-skills {
     height: 100vw;
 }
 
-/* PROJECTS */
+/* ----------PROJECTS---------- */
 .projects {
     height: 100vw;
 }
 
-/* CONTACT */
+/* ----------CONTACT---------- */
 .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 50vw;
+    margin-bottom: 40vw;
 }
 
 .icons > a:hover {
@@ -99,4 +108,26 @@ h2 {
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 50%;
+}
+
+/* -------Custom Scroll Bar------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: antiquewhite;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
 }
