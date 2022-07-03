@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,29 +11,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    
+    <script src="./home.js"></script>
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tech-skills.html">Tech Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+</head>
+
+<body>
+<!-- ---------NAVIGATION BAR--------- -->
+    <nav id="navbar" class="navbar">
+        <ul class="navbar__list">
+            <li><a class="navbar__list--item" href="#home">Home</a></li>
+            <li><a class="navbar__list--item" href="#about">About</a></li>
+            <li><a class="navbar__list--item" href="#techSkills">Skills</a></li>
+            <li><a class="navbar__list--item" href="#projects">Projects</a></li>
+            <li><a class="navbar__list--item" href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+<!-- --------------HOME-------------- -->
+    <section id="home" class="home">
+        <header>
+            <h1>hi, i'm maddi</h1>
+            <h2> — a junior web developer based in adelaide SA</h2>
+        </header>
+    </section>
     
-    <header>
-        <br>
-        <br>
-        <h1>hi, i'm maddi</h1>
-        <h2> — a junior web developer based in adelaide SA</h2>
-        <br>
-    
-    </header>
-    
-    
-    
+<!-- --------------ABOUT-------------- -->
+    <section id="about" class="about">
+        <header class="about--header">
+            <br>
+            <br>
+            <h1>about</h1>
+        </header>
+
+        <main class="about--para">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic molestias quis cupiditate debitis nobis explicabo, repellendus quidem inventore rerum. Animi aut, inventore libero beatae fugiat autem tempora quasi ducimus nihil.</p>
+        </main>
+    </section>
+
+<!-- -----------TECH SKILLS----------- -->
+    <section id="techSkills" class="tech-skills">
+        <header>
+            <br>
+            <br>
+            <h1>tech skills</h1>
+        </header>
+        <main class="about--para">
+            <p>HTML // CSS // SCSS //  JavaScript // Git</p>
+        </main>
+    </section>
+
+<!-- ------------PROJECTS------------ -->
+    <section id="projects" class="projects">
+        <header>
+            <br>
+            <br>
+            <h1>projects</h1>
+            <br>
+        </header>
+        <div class="gallerybox">
+            <div class="gallery">
+                <img src="good-boy.png" alt="">
+                <img src="good-boy.png" alt="">
+                <img src="good-boy.png" alt="">
+                <img src="good-boy.png" alt="">
+                <img src="good-boy.png" alt="">
+                <img src="good-boy.png" alt="">
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+<!-- -------------CONTACT------------- -->
+    <section id="contact" class="contact">
+        <header>
+            <br>
+            <br>
+            <h1>contact</h1>
+        </header>
+
+        <main>
+            <div class="icons">
+                <a href="https://github.com/maddicoats" target="_blank">
+                    <img class="gh" src="github.png" alt="github icon" width="64" height="64">
+                </a>
+                <a href="mailto:mcoats799@gmail.com" target="_blank">
+                    <img class="email" src="email.png" alt="email icon" width="64" height="64">
+                </a>
+                <a href="https://au.linkedin.com" target="_blank">
+                    <img class="li" src="linkedin.png" alt="linked in icon" width="64" height="64">
+                </a>
+            </div>
+        </main>
+    </section>
+
+
 </body>
 </html>

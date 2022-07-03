@@ -4,51 +4,74 @@
 
 body {
     background-color: antiquewhite;
-    
 }
 
+main {
+    margin: 10px;
+}
+
+/* --------NAVIGATION BAR-------- */
 nav {
     margin-bottom: 30px;
-    background-color: rgba(95, 158, 160, 0.503);
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(176, 196, 188);
     border: 3.5px double black;
+    border-radius: 0px;
     height: 45px;
 }
 
-nav>ul {
-    list-style-type: none;  
+nav > ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-left: 0px;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
     color: black;
     text-decoration: none;
     font-size: 14px;
     padding: 15px;
-
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
     color: white;
-    text-decoration:overline;
+    text-decoration: overline;
     font-style: italic;
-    
+}
 
+.navbar {
+    position: sticky;
+    top: 8px;
+    z-index: 100;
+}
+
+/* ----------HOME---------- */
+
+.home {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: black;
     text-align: center;
-    font-family: 'chakra petch', sans-serif;
+    font-family: "chakra petch", sans-serif;
     font-size: 450%;
 }
 
 h2 {
     text-align: center;
-    font-family: 'chakra petch', sans-serif;
+    font-family: "chakra petch", sans-serif;
 }
+
+
+
+/* ----------ABOUT---------- */
 
 .about--para {
     text-align: center;
@@ -56,15 +79,61 @@ h2 {
     margin-top: 0px;
 }
 
-main {
-    margin: 10px;
+.about {
+    height: 75vh;
+    padding-top: 15%;
+}
+
+/* ----------TECH SKILLS---------- */
+.tech-skills {
+    height: 75vh;
+    padding-top: 15%;
+}
+
+/* ----------PROJECTS---------- */
+.projects {
+    height: 100%;
+    padding-top: 5%;
+}
+
+.gallerybox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 15px;
+}
+
+.gallery img {
+    height: 100%px;
+    width: 220px;
+    
+    border: 1px transparent white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.gallery img:hover {
+    padding: 9px;
+    border: 1px solid rgb(252, 252, 252);
+    background-color: white;
+}
+
+/* ----------CONTACT---------- */
+.contact {
+    height: 75vh;
+    margin-top: 80px;
+    padding-top: 20%;
 }
 
 .icons {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .icons > a:hover {
@@ -75,8 +144,60 @@ main {
     background-color: white;
 }
 
-.icons>a {
+.icons > a {
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 50%;
+}
+
+/* -------Custom Scroll Bar------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: antiquewhite;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+/* --------SCREEN SIZES--------- */
+
+@media only screen and (max-width: 450px) {
+    .navbar__list--item {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .navbar {
+        margin-left: 0.2%;
+        margin-right: 0.2%;    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }   
+}
+
+@media only screen and (min-width: 992px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
 }
