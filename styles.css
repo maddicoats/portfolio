@@ -81,16 +81,19 @@ h2 {
 
 .about {
     height: 75vh;
+    padding-top: 15%;
 }
 
 /* ----------TECH SKILLS---------- */
 .tech-skills {
     height: 75vh;
+    padding-top: 15%;
 }
 
 /* ----------PROJECTS---------- */
 .projects {
     height: 100%;
+    padding-top: 5%;
 }
 
 .gallerybox {
@@ -123,13 +126,14 @@ h2 {
 /* ----------CONTACT---------- */
 .contact {
     height: 75vh;
-    margin-top: 190px;
+    margin-top: 80px;
+    padding-top: 20%;
 }
 
 .icons {
     display: flex;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;  
 }
 
 .icons > a:hover {
@@ -150,7 +154,7 @@ h2 {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 10px;
 }
 
 /* Track */
@@ -195,5 +199,5 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 15px;
-    }   
+    }
 }
