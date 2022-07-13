@@ -1,203 +1,237 @@
 * {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 body {
-    background-color: antiquewhite;
+  background-color: #faebd7;
+  margin: 0px;
+}
+
+.page {
+  margin: 10px;
 }
 
 main {
-    margin: 10px;
+  margin: 10px;
 }
 
 /* --------NAVIGATION BAR-------- */
 nav {
-    margin-bottom: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: rgb(176, 196, 188);
-    border: 3.5px double black;
-    border-radius: 0px;
-    height: 45px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #b0c4bc;
+  border: 3.5px double black;
+  border-radius: 0px;
+  height: 45px;
 }
 
 nav > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
 }
 
 nav > ul > li > a {
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px;
+  font-family: "chakra petch";
+  font-weight: 600;
 }
 
 nav > ul > li > a:hover {
-    color: white;
-    text-decoration: overline;
-    font-style: italic;
+  color: white;
+  text-decoration: overline;
+  font-style: italic;
 }
 
 .navbar {
-    position: sticky;
-    top: 8px;
-    z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8px;
+  z-index: 100;
 }
 
 /* ----------HOME---------- */
-
 .home {
-    height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    color: black;
-    text-align: center;
-    font-family: "chakra petch", sans-serif;
-    font-size: 450%;
+  color: black;
+  text-align: center;
+  font-family: "chakra petch", sans-serif;
+  font-size: 450%;
 }
 
 h2 {
-    text-align: center;
-    font-family: "chakra petch", sans-serif;
+  text-align: center;
+  font-family: "chakra petch", sans-serif;
 }
-
-
 
 /* ----------ABOUT---------- */
-
-.about--para {
-    text-align: center;
-    margin: 85px;
-    margin-top: 0px;
-}
-
 .about {
-    height: 75vh;
-    padding-top: 15%;
+  height: 75vh;
+  padding-top: 15%;
 }
-
-/* ----------TECH SKILLS---------- */
-.tech-skills {
-    height: 75vh;
-    padding-top: 15%;
+.about--para {
+  text-align: center;
+  margin: 85px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
-/* ----------PROJECTS---------- */
-.projects {
-    height: 100%;
-    padding-top: 5%;
-}
-
-.gallerybox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 15px;
-}
-
-.gallery img {
-    height: 100%px;
-    width: 220px;
-    
-    border: 1px transparent white;
-    border-radius: 2px;
-    padding: 10px;
-}
-
-.gallery img:hover {
-    padding: 9px;
-    border: 1px solid rgb(252, 252, 252);
-    background-color: white;
+.about--icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 30px;
 }
 
 /* ----------CONTACT---------- */
 .contact {
-    height: 75vh;
-    margin-top: 80px;
-    padding-top: 20%;
+  margin-top: 10px;
 }
 
 .icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .icons > a:hover {
-    cursor: alias;
-    padding: 10px;
-    border: 1px solid rgb(252, 252, 252);
-    border-radius: 40%;
-    background-color: white;
+  cursor: alias;
+  padding: 10px;
+  border: 1px solid rgb(252, 252, 252);
+  border-radius: 40%;
+  background-color: white;
 }
 
 .icons > a {
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 50%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+/* ----------TECH SKILLS---------- */
+.tech-skills {
+  height: 75vh;
+  padding-top: 15%;
+}
+
+/* ----------PROJECTS---------- */
+.projects {
+  height: 100%;
+  padding-top: 5%;
+}
+
+.gallerybox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.gallery img {
+  height: 100%;
+  width: 320px;
+  border: 1px transparent white;
+  border-radius: 2px;
+  padding: 10px;
+}
+.gallery img:hover {
+  padding: 9px;
+  border: 1px solid rgb(252, 252, 252);
+  background-color: white;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px double transparent;
+  padding: 20px;
+  width: 320px;
+}
+.project h2 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-decoration: overline;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+}
+.project h2:hover {
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+.project p {
+  text-align: center;
 }
 
 /* -------Custom Scroll Bar------- */
-
-/* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-    background: black;
+  background: black;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: antiquewhite;
+  background: antiquewhite;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: white;
+  background: white;
+}
+
+/* --------FOOTER--------- */
+footer {
+  height: 60px;
+  background-color: #b0c4bc;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --------SCREEN SIZES--------- */
-
 @media only screen and (max-width: 450px) {
-    .navbar__list--item {
-        padding-left: 7px;
-        padding-right: 7px;
-    }
-
-    .navbar {
-        margin-left: 0.2%;
-        margin-right: 0.2%;    
-    }
+  .navbar__list--item {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .navbar {
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+  }
 }
-
-@media only screen and (max-width: 600px) {
-    .gallery {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }   
+@media only screen and (max-width: 800px) {
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-
-@media only screen and (min-width: 992px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 15px;
-    }
-}
+@media only screen and (min-width: 1200px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+}/*# sourceMappingURL=styles.css.map */

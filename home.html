@@ -11,28 +11,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
-    
-    <script src="./home.js"></script>
+    <link rel="icon" href="favicon.ico?">
 
+    <script src="https://kit.fontawesome.com/c72f3c627b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+<div class="page">
 <!-- ---------NAVIGATION BAR--------- -->
     <nav id="navbar" class="navbar">
         <ul class="navbar__list">
-            <li><a class="navbar__list--item" href="#home">Home</a></li>
-            <li><a class="navbar__list--item" href="#about">About</a></li>
-            <li><a class="navbar__list--item" href="#techSkills">Skills</a></li>
-            <li><a class="navbar__list--item" href="#projects">Projects</a></li>
-            <li><a class="navbar__list--item" href="#contact">Contact</a></li>
+            <li><a class="navbar__list--item" href="#home">HOME</a></li>
+            <li><a class="navbar__list--item" href="#about">ABOUT</a></li>
+            <li><a class="navbar__list--item" href="#techSkills">SKILLS</a></li>
+            <li><a class="navbar__list--item" href="#projects">PROJECTS</a></li>
         </ul>
     </nav>
 
 <!-- --------------HOME-------------- -->
     <section id="home" class="home">
         <header>
-            <h1>hi, i'm maddi</h1>
-            <h2> — a junior web developer based in adelaide SA</h2>
+            <h1 id="heading">hi, i'm maddi</h1>
+            <h2 id="subheading">- a junior wev developper based in adelaide SA</h2>
         </header>
     </section>
     
@@ -45,8 +45,28 @@
         </header>
 
         <main class="about--para">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic molestias quis cupiditate debitis nobis explicabo, repellendus quidem inventore rerum. Animi aut, inventore libero beatae fugiat autem tempora quasi ducimus nihil.</p>
+            <p>After graduating from the University of Adelaide with a Bachelor of Languages i've worked in a variety of fields including translation, reception/administration, customer service and tree planting. </p>
+            <p>tech</p>
+            <p>In my free time i enjoy playing ice hockey, D&D, and making music.</p>
         </main>
+    
+
+<!-- -------------CONTACT------------- -->
+        <section id="contact" class="contact">
+            <main>
+                <div class="icons">
+                    <a href="https://github.com/maddicoats" target="_blank">
+                        <img class="gh" src="github.png" alt="github icon" width="64" height="64">
+                    </a>
+                    <a href="mailto:mcoats799@gmail.com" target="_blank">
+                        <img class="email" src="email.png" alt="email icon" width="64" height="64">
+                    </a>
+                    <a href="https://au.linkedin.com" target="_blank">
+                        <img class="li" src="linkedin.png" alt="linked in icon" width="64" height="64">
+                    </a>
+                </div>
+            </main>
+        </section>
     </section>
 
 <!-- -----------TECH SKILLS----------- -->
@@ -57,7 +77,27 @@
             <h1>tech skills</h1>
         </header>
         <main class="about--para">
-            <p>HTML // CSS // SCSS //  JavaScript // Git</p>
+            <div class="about--icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-sass"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-google"></i>
+            </div>
+
+            <p>HTML // CSS ~ SCSS //  JavaScript // ReactJS //Firebase ~ Firestore</p>
+
+            <div class="about--icons">
+                SQL
+                <i class="fa-brands fa-java"></i>
+                SB
+                <i class="fa-brands fa-git-square"></i>
+                <i class="fa-brands fa-aws"></i>
+
+            </div>
+
+            <p>MySQL // Java  //  SpringBoot //  Git  // AWS</p>
         </main>
     </section>
 
@@ -71,12 +111,41 @@
         </header>
         <div class="gallerybox">
             <div class="gallery">
-                <img src="good-boy.png" alt="">
-                <img src="good-boy.png" alt="">
-                <img src="good-boy.png" alt="">
-                <img src="good-boy.png" alt="">
-                <img src="good-boy.png" alt="">
-                <img src="good-boy.png" alt="">
+                <div class="project">
+                    <img src="project-calc.png" alt="">
+                    <h2>JavaScript Calculator</h2>
+                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                </div>
+                
+                <div class="project">
+                    <img src="project-calc.png" alt="">
+                    <h2>JavaScript Calculator</h2>
+                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project-calc.png" alt="">
+                    <h2>JavaScript Calculator</h2>
+                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project-calc.png" alt="">
+                    <h2>JavaScript Calculator</h2>
+                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project-calc.png" alt="">
+                    <h2>JavaScript Calculator</h2>
+                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project-calc.png" alt="">
+                    <h2>JavaScript Calculator</h2>
+                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                </div>
             </div>
             <br>
             <br>
@@ -84,29 +153,11 @@
         </div>
     </section>
 
-<!-- -------------CONTACT------------- -->
-    <section id="contact" class="contact">
-        <header>
-            <br>
-            <br>
-            <h1>contact</h1>
-        </header>
-
-        <main>
-            <div class="icons">
-                <a href="https://github.com/maddicoats" target="_blank">
-                    <img class="gh" src="github.png" alt="github icon" width="64" height="64">
-                </a>
-                <a href="mailto:mcoats799@gmail.com" target="_blank">
-                    <img class="email" src="email.png" alt="email icon" width="64" height="64">
-                </a>
-                <a href="https://au.linkedin.com" target="_blank">
-                    <img class="li" src="linkedin.png" alt="linked in icon" width="64" height="64">
-                </a>
-            </div>
-        </main>
-    </section>
-
-
+</div>
+<!-- ------------FOOTER------------ -->
+<footer><p>© 2022 Maddi Coats</p></footer>
 </body>
+
+
+<script src="./home.js"></script>
 </html>
