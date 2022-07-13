@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: monospace;
 }
@@ -15,6 +19,10 @@ main {
   margin: 10px;
 }
 
+p {
+  font-size: 14px;
+}
+
 /* --------NAVIGATION BAR-------- */
 nav {
   margin-bottom: 30px;
@@ -25,7 +33,6 @@ nav {
   border-radius: 0px;
   height: 45px;
 }
-
 nav > ul {
   list-style-type: none;
   display: flex;
@@ -33,7 +40,6 @@ nav > ul {
   align-items: center;
   padding-left: 0px;
 }
-
 nav > ul > li > a {
   color: black;
   text-decoration: none;
@@ -42,7 +48,6 @@ nav > ul > li > a {
   font-family: "chakra petch";
   font-weight: 600;
 }
-
 nav > ul > li > a:hover {
   color: white;
   text-decoration: overline;
@@ -107,19 +112,17 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
-
+.icons > a {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
 .icons > a:hover {
   cursor: alias;
   padding: 10px;
   border: 1px solid rgb(252, 252, 252);
   border-radius: 40%;
   background-color: white;
-}
-
-.icons > a {
-  padding: 10px;
-  border: 1px solid transparent;
-  border-radius: 50%;
 }
 
 /* ----------TECH SKILLS---------- */
@@ -145,12 +148,16 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 }
+.gallery a:hover {
+  cursor: alias;
+}
 .gallery img {
   height: 100%;
   width: 320px;
   border: 1px transparent white;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 10px;
+  background-color: black;
 }
 .gallery img:hover {
   padding: 9px;
@@ -168,7 +175,7 @@ h2 {
   width: 320px;
 }
 .project h2 {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 0px;
   text-decoration: overline;
   -webkit-text-decoration-color: black;
@@ -182,19 +189,16 @@ h2 {
   text-align: center;
 }
 
-/* -------Custom Scroll Bar------- */
+/* ------- SCROLL BAR------- */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: black;
 }
-
 ::-webkit-scrollbar-thumb {
   background: antiquewhite;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: white;
 }
@@ -234,4 +238,73 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
   }
+}
+.center-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 50px;
+  border-radius: 100%;
+}
+.round:hover {
+  cursor: pointer;
+}
+
+span {
+  z-index: 999;
+  height: 2px;
+  margin: 1px;
+  width: 10px;
+  background: rgb(0, 0, 0);
+  transition: 0.5s ease;
+}
+span:first-child {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 32%;
+  bottom: 35%;
+}
+span:nth-child(2) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 38%;
+  bottom: 35%;
+}
+span:nth-child(3) {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 32%;
+  bottom: 54%;
+}
+span:nth-child(4) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 38%;
+  bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+  transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+  transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+  transform: rotate(-225deg);
 }/*# sourceMappingURL=styles.css.map */
