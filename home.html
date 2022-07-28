@@ -21,10 +21,10 @@
 <!-- ---------NAVIGATION BAR--------- -->
     <nav id="navbar" class="navbar">
         <ul class="navbar__list">
-            <li><a class="navbar__list--item" href="#home">HOME</a></li>
-            <li><a class="navbar__list--item" href="#about">ABOUT</a></li>
-            <li><a class="navbar__list--item" href="#techSkills">SKILLS</a></li>
-            <li><a class="navbar__list--item" href="#projects">PROJECTS</a></li>
+            <li><a class="navbar__list--item" href="#home">home</a></li>
+            <li><a class="navbar__list--item" href="#about">about</a></li>
+            <li><a class="navbar__list--item" href="#skills">skills</a></li>
+            <li><a class="navbar__list--item" href="#projects">projects</a></li>
         </ul>
     </nav>
 
@@ -55,107 +55,126 @@
         </header>
 
         <main class="about--para">
-            <p>After graduating from the University of Adelaide with a Bachelor of Languages i've worked in a variety of fields including translation, reception/administration, customer service and tree planting. </p>
-            <p>tech</p>
+            <p>After graduating from the University of Adelaide with a Bachelor of Languages in 2020, i've worked in a variety of fields including translation, reception/administration, customer service and tree planting. </p>
+            <p>I've always been interested in tech/design and finally had the opporunity to pursue it this year with  _nology's web development course</p>
             <p>In my free time i enjoy playing ice hockey, D&D, and making music.</p>
         </main>
     
 
 <!-- -------------CONTACT------------- -->
-        <section id="contact" class="contact">
-            <main>
-                <div class="icons">
-                    <a href="https://github.com/maddicoats" target="_blank">
-                        <img class="gh" src="github.png" alt="github icon" width="64" height="64">
-                    </a>
-                    <a href="mailto:mcoats799@gmail.com" target="_blank">
-                        <img class="email" src="email.png" alt="email icon" width="64" height="64">
-                    </a>
-                    <a href="https://au.linkedin.com" target="_blank">
-                        <img class="li" src="linkedin.png" alt="linked in icon" width="64" height="64">
-                    </a>
-                </div>
-            </main>
+        
+        <div class="about--icons">
+            <a href="https://github.com/maddicoats" target="_blank">
+                <img class="gh" src="assets/github.png" alt="github icon" width="64" height="64">
+            </a>
+            <a href="mailto:mcoats799@gmail.com" target="_blank">
+                <img class="email" src="assets/email.png" alt="email icon" width="64" height="64">
+            </a>
+            <a href="https://au.linkedin.com" target="_blank">
+                <img class="li" src="assets/linkedin.png" alt="linked in icon" width="64" height="64">
+            </a>
+        </div>
+    
+        <div class="center-con">
+            <div class="round" onClick="document.getElementById('skills').scrollIntoView();">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
         </section>
-    </section>
 
 <!-- -----------TECH SKILLS----------- -->
-    <section id="techSkills" class="tech-skills">
+    <section id="skills" class="tech-skills">
         <header>
-            <br>
-            <br>
             <h1>tech skills</h1>
         </header>
-        <main class="about--para">
-            <div class="about--icons">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-sass"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-google"></i>
-            </div>
-
-            <p>HTML // CSS ~ SCSS //  JavaScript // ReactJS //Firebase ~ Firestore</p>
-
-            <div class="about--icons">
+        <main class="skills">
+            <div class="skills--icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-google"></i>
                 SQL
                 <i class="fa-brands fa-java"></i>
                 SB
                 <i class="fa-brands fa-git-square"></i>
                 <i class="fa-brands fa-aws"></i>
-
             </div>
-
-            <p>MySQL // Java  //  SpringBoot //  Git  // AWS</p>
+            <p>HTML // CSS ~ SCSS //  JavaScript // ReactJS //Firebase ~ Firestore // MySQL // Java  //  SpringBoot //  Git  // AWS</p>
         </main>
+
+        <div class="center-con">
+            <div class="round" onClick="document.getElementById('projects').scrollIntoView();">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
     </section>
+
+
 
 <!-- ------------PROJECTS------------ -->
     <section id="projects" class="projects">
         <header>
-            <br>
-            <br>
             <h1>projects</h1>
-            <br>
         </header>
         <div class="gallerybox">
             <div class="gallery">
                 <div class="project">
-                    <a href="https://github.com/maddicoats/calculator" target="_blank"><img src="project-calc.png" alt=""></a>
-                    <h2>JavaScript Calculator</h2>
+                    <a href="https://maddicoats.github.io/calculator/" target="_blank">
+                        <img class="project--image" src="assets/project-calc.png" alt="">
+                    </a>
+                    
+                    <a class="ghlink" href="https://github.com/maddicoats/calculator" target="_blank">
+                        <h2>
+                        JavaScript 
+                            <i class="fa-brands fa-github project--ghicon"></i> 
+                        Calculator
+                        </h2>
+                    </a>
+
                     <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
                 </div>
                 
                 <div class="project">
-                    <img src="project-calc.png" alt="">
-                    <h2>JavaScript Calculator</h2>
-                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                    <a href="https://maddicoats.github.io/morse-code-translator/" target="_blank">
+                        <img class="project--image" src="assets/project-mct.png" alt="">
+                    </a>
+
+                    <a href="https://github.com/maddicoats/morse-code-translator" target="_blank">
+                        <h2>
+                        Morsecode 
+                            <i class="fa-brands fa-github project--ghicon"></i>
+                        Translator
+                        </h2>
+                    </a>
+                    <p>A web page that translates text to morse code and morse code to text using HTML, SCSS and JavaScript.</p>
                 </div>
 
                 <div class="project">
-                    <img src="project-calc.png" alt="">
-                    <h2>JavaScript Calculator</h2>
-                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
+                    <a href="https://maddicoats.github.io/google-books/" target="_blank">
+                        <img class="project--image" src="assets/project-bf.png" alt="">
+                    </a>
+
+                    <a href="https://github.com/maddicoats/google-books" target="_blank">
+                        <h2>
+                        Book 
+                            <i class="fa-brands fa-github project--ghicon"></i>
+                        Finder.
+                        </h2>
+                    </a>
+                    <p>A search engine web page that uses the Google Books API.</p>
                 </div>
 
-                <div class="project">
-                    <img src="project-calc.png" alt="">
-                    <h2>JavaScript Calculator</h2>
-                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
-                </div>
-
-                <div class="project">
-                    <img src="project-calc.png" alt="">
-                    <h2>JavaScript Calculator</h2>
-                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
-                </div>
-
-                <div class="project">
-                    <img src="project-calc.png" alt="">
-                    <h2>JavaScript Calculator</h2>
-                    <p>A working reproduction of the Mathbox Novus 650 calculator using HTML, SCSS and JavaScript.</p>
-                </div>
+    
             </div>
             <br>
             <br>

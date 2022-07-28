@@ -20,7 +20,8 @@ main {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 /* --------NAVIGATION BAR-------- */
@@ -46,7 +47,7 @@ nav {
             font-size: 15px;
             padding: 15px;
             font-family: "chakra petch";
-            font-weight: 600;
+            font-weight: bold;
 
             &:hover {
                 color: white;
@@ -71,6 +72,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
@@ -89,49 +93,34 @@ h2 {
 /* ----------ABOUT---------- */
 
 .about {
-    height: 75vh;
-    padding-top: 15%;
+    height: 100vh;
+    padding-top: 5%;
 
     &--para {
         text-align: center;
         margin: 85px;
         margin-top: 0px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        margin-bottom: 40px;
     }
 
     &--icons {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin-bottom: 20px;
-        margin-top: 50px;
-        font-size: 30px;
-    }
-}
 
-
-/* ----------CONTACT---------- */
-.contact {
-    margin-top: 10px;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    &>a {
-        padding: 10px;
-        border: 1px solid transparent;
-        border-radius: 50%;
-
-        &:hover {
-            cursor: alias;
+        &>a {
             padding: 10px;
-            border: 1px solid rgb(252, 252, 252);
-            border-radius: 40%;
-            background-color: white;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            margin: 10px;
+
+            &:hover {
+                cursor: alias;
+                padding: 10px;
+                border: 1px solid rgb(252, 252, 252);
+                border-radius: 40%;
+                background-color: white;
+            }
         }
     }
 }
@@ -139,8 +128,26 @@ h2 {
 
 /* ----------TECH SKILLS---------- */
 .tech-skills {
-    height: 75vh;
+    height: 80vh;
     padding-top: 15%;
+}
+
+.skills {
+
+    text-align: center;
+    margin: 55px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+    &--icons {
+        font-size: 50px;
+    }
+
+    & p {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
 }
 
 
@@ -157,56 +164,66 @@ h2 {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-
-    & a:hover {
-        cursor: alias;
-    }
-
-    & img {
-        height: 100%;
-        width: 320px;
-
-        border: 1px transparent white;
-        border-radius: 3px;
-        padding: 10px;
-        background-color: black;
-
-        &:hover {
-            padding: 9px;
-            border: 1px solid rgb(252, 252, 252);
-            background-color: white;
-        }
-    }
-}
-
-.project {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    border: 3px double transparent;
-    padding: 20px;
-    width: 320px;
+    flex-wrap: wrap;
 
+    .project {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 3px double transparent;
+        padding: 20px;
+        width: 420px;
+        margin-bottom: 20px;
 
-    & h2 {
-        margin-top: 40px;
-        margin-bottom: 0px;
-        text-decoration: overline;
-        text-decoration-color: black;
+        & a {
+            color: black;
+            text-decoration: none;
 
-        &:hover {
-            text-decoration-color: white;
+            &:hover {
+                cursor: pointer;
+            }
+
+            & h2 {
+                margin-top: 40px;
+                margin-bottom: 0px;
+                text-decoration: overline;
+                text-decoration-color: black;
+
+                // &:hover {
+                //     text-decoration-color: white;
+                // }
+
+                &:hover .project--ghicon {
+                    color: #b0c4bc;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & p {
+            text-align: center;
+        }
+
+        &--image {
+            width: 380px;
+            border-radius: 3px;
+            padding: 10px;
+            background-color: white;
+
+            &:hover {
+                padding: 9px;
+                border: 1px solid rgb(252, 252, 252);
+                background-color: black;
+                cursor: alias;
+            }
         }
     }
-
-    & p {
-        text-align: center;
-    }
 }
+
 
 /* ------- SCROLL BAR------- */
 
@@ -241,7 +258,7 @@ footer {
 
 /* --------SCREEN SIZES--------- */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .navbar__list--item {
         padding-left: 7px;
         padding-right: 7px;
@@ -251,21 +268,41 @@ footer {
         margin-left: 0.2%;
         margin-right: 0.2%;
     }
-}
 
-@media only screen and (max-width: 800px) {
-    .gallery {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    .about {
+        h1 {
+            margin-top: 20px;
+        }
+
+        &--para {
+            margin-left: 10px;
+            margin-right: 10px
+        }
+    }
+
+    .skills {
+        margin: 15px;
+    }
+
+    .projects {
+        & h1 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .project {
+        width: 320px !important;
+    }
+
+    .project--image {
+        width: 300px !important;
     }
 }
 
+
 @media only screen and (min-width: 1200px) {
     .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 15px;
+        flex-direction: row;
     }
 }
 
@@ -276,6 +313,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
 
 .round {
